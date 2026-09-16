@@ -65,7 +65,7 @@ Dépendances :
 pip install fipy numpy sympy matplotlib scipy
 ```
 
-### `mms_stationnaire.py`
+### `Tests_couplé_découplé.ipynb`
 
 Vérification par **solutions manufacturées** en régime permanent. Les champs
 $h^{\text{ex}}$ et $C^{\text{ex}}$ sont choisis analytiquement, les résidus
@@ -88,7 +88,7 @@ flottabilité. Le résidu de continuité $|\mathrm{div}_h q + S_h|$ reste entre
 $10^{-22}$ et $10^{-19}$ sans suivre la décroissance en $\Delta x$ : c'est le
 résidu du solveur linéaire, pas une erreur de schéma.
 
-### `mms_transitoire.py`
+### `MMS_Complet.ipynb`
 
 Même démarche avec le **terme d'évolution** $n_e\partial_t C$ et sa
 discrétisation d'Euler implicite. Champs manufacturés modulés en temps,
@@ -96,7 +96,7 @@ conditions de Dirichlet dépendantes du temps, raffinement simultané
 $\Delta t \propto \Delta x$. Ordre global mesuré : **1,14** à $N = 256$,
 conforme à la valeur asymptotique attendue.
 
-### `simulation_robinson.py`
+### `Code_Boussinesq.ipynb`
 
 Simulation d'intrusion complète : domaine $200 \times 32$ m, pente inclinée,
 zone marine pénalisée, flux d'eau douce imposé — reproduisant le cas sans marée
